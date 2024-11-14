@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulario de Registro</h2>
+        <form action="/submit" method="POST" id="signup-form">
+            <div class="form-group">
+                <input class="input-field" type="text" id="username" name="username" placeholder="Nombre de usuario" required>
+            </div>
+            <div class="form-group">
+                <input class="input-field" type="email" id="email" name="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <input class="input-field" type="password" id="password" name="password" placeholder="Contraseña" required>
+            </div>
+            <div class="form-group">
+                <input class="input-field" type="text" id="firstName" name="firstName" placeholder="Nombre" required>
+            </div>
+            <div class="form-group">
+                <input class="input-field" type="text" id="lastName" name="lastName" placeholder="Apellido" required>
+            </div>
+            <div class="form-group">
+                <input class="input-field" type="date" id="birthDate" name="birthDate" placeholder="Fecha de nacimiento" required>
+            </div>
+            <div class="form-group">
+                <textarea class="bio-textarea" id="biography" name="biography" placeholder="Biografía" required></textarea>
+            </div>
+            <button class="btn-submit" type="submit">Sign Up</button>
+        </form>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
